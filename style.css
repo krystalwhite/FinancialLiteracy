@@ -1,4 +1,8 @@
 body {
     background-image: linear-gradient(rgb(255, 254, 254), 0.733, white);
     color: rgb(104, 102, 102)
+    font-size: 150%;
+    font-family: 'Satisfy', cursive;
+    margin: 5em 25%;
+}
 }
