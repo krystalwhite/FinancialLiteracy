@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
 
@@ -15,12 +15,13 @@
   <body class="quizBackground">
     <p class="question">If you purchased that same iPhone 11 Pro with a credit card and paid the monthly minimum only, roughly how long might you pay a credit card bill solely for the phone purchase?</p>
   <div class="responses">
-    <button onclick="answer7wrong()">5 months</button>
-    <button onclick="answer7wrong()">12 months (1 year)</button>
-    <button onclick="answer7wrong()">26 months (2 years, 2 months)</button>
-    <button onclick="answer7wrong()">61 months (5 years, 1 month)</button>
-    <button onclick="answer7correct()">113 months (9 years, 5 months)</button>
+    <button onclick="seven()">5 months</button>
+    <button onclick="seven()">12 months (1 year)</button>
+    <button onclick="seven()">26 months (2 years, 2 months)</button>
+    <button onclick="seven()">61 months (5 years, 1 month)</button>
+    <button id = "correct" onclick="seven()">113 months (9 years, 5 months)</button>
   </div>
+  <p class="correctAnswer"id="correctOrWrong"></p>
   <p class="correctAnswer" id="correctAnswer"></p>
   <p class="answerText" id="answerText"></p>
   <a class="nextPageBtn" id="nextPageBtn" href="index2.html">Return home</a>

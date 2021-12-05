@@ -17,98 +17,64 @@ let correctAnswer6 = "$480";
 let correctAnswer7 = "113 months (9 years, 5 months)"; 
 
 
-function answer1(){ 
+
+function one(){ 
 document.getElementById("nextPageBtn").style.visibility = "visible"; 
 }; 
 
-function answer2correct(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = correct + "\n \n" + comment2; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = "Correct Answer: " + correctAnswer2 + "\n \n"; 
-}; 
 
-function answer2wrong(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = wrong + "\n \n" + comment2; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer2 + "\n \n"; 
-}; 
+function two(){ 
+    document.getElementById("nextPageBtn").style.visibility = "visible"; 
+    document.getElementById("answerText").innerHTML = "\n \n" + comment2;
+    document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer2;
+    document.getElementById('button').onclick = function() {
+        alert("button was clicked");
+    };
 
-function answer3correct(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = correct + "\n \n" + comment3; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = "Correct Answer: " + correctAnswer3 + "\n \n"; 
-}; 
 
-function answer3wrong(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = wrong + "\n \n" + comment3; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer3 + "\n \n"; 
-}; 
+function three(){ 
+    document.getElementById("nextPageBtn").style.visibility = "visible"; 
+    document.getElementById("answerText").innerHTML = "\n \n" + comment3;
+    document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer3;
+    };
+    
+   
 
-function answer4correct(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = correct + "\n \n" + comment4; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer4 + "\n \n"; 
-}; 
 
-function answer4wrong(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = wrong + "\n \n" + comment4; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer4 + "\n \n"; 
-}; 
+function four(){ 
+    document.getElementById("nextPageBtn").style.visibility = "visible"; 
+    document.getElementById("answerText").innerHTML = "\n \n" + comment4;
+    document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer4;
 
-function answer5correct(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = correct + "\n \n" + comment5; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer5 + "\n \n"; 
-}; 
+    };
 
-function answer5wrong(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = wrong + "\n \n" + comment5; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer5 + "\n \n"; 
-}; 
 
-function answer6correct(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = correct + "\n \n" + comment6; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer6 + "\n \n"; 
-}; 
+function five(){ 
+    document.getElementById("nextPageBtn").style.visibility = "visible"; 
+    document.getElementById("answerText").innerHTML = "\n \n" + comment5;
+    document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer5;
+   
+    };
 
-function answer6wrong(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = wrong + "\n \n" + comment6; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " +  correctAnswer6 + "\n \n"; 
-}; 
 
-function answer7correct(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = correct + "\n \n" + comment7; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer7 + "\n \n"; 
-}; 
+function six(){ 
+    document.getElementById("nextPageBtn").style.visibility = "visible"; 
+    document.getElementById("answerText").innerHTML = "\n \n" + comment6;
+    document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer6;
+    
+    };
 
-function answer7wrong(){ 
-document.getElementById("nextPageBtn").style.visibility = "visible"; 
-document.getElementById("answerText").innerHTML = wrong + "\n \n" + comment7; 
-document.getElementById("correctAnswer").style.visibility = "visible"; 
-document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correctAnswer7 + "\n \n"; 
-}; 
+
+function seven(){ 
+    document.getElementById("answerText").innerHTML = "\n \n" + comment7;
+    document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer7;
+    
+    };
 
 
 
 //stock calculator 
-function test(){ 
+function stockCalculator(){ 
 let initialPrincipal = document.getElementById("inputPrincipal").value;
 let additionalYearlyContribution = document.getElementById("inputContributions").value; 
 let yearsInvested = document.getElementById("inputYears").value; 

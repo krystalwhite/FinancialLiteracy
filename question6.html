@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
 
@@ -15,12 +15,13 @@
   <body class="quizBackground">
     <p class="question">If you purchased an iPhone 11 Pro for $999 in 2019 and kept it in good condition, approximately how much is your iPhone worth today?</p>
   <div class="responses">
-    <button onclick="answer6correct()">$480</button>
-    <button onclick="answer6wrong()">$620</button>
-    <button onclick="answer6wrong()">$800</button>
-    <button onclick="answer6wrong()">$999</button>
-    <button onclick="answer6wrong()">$1,200</button>
+    <button id = "correct" onclick="six()">$480</button>
+    <button onclick="six()">$620</button>
+    <button onclick="six()">$800</button>
+    <button onclick="six()">$999</button>
+    <button onclick="six()">$1,200</button>
   </div>
+  <p class="correctAnswer"id="correctOrWrong"></p>
   <p class="correctAnswer" id="correctAnswer"></p>
   <p class="answerText" id="answerText"></p>
   <a class="nextPageBtn" id="nextPageBtn" href="question7.html">Next Question</a>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
 
@@ -15,12 +15,13 @@
   <body class="quizBackground">
     <p class="question">If you purchased a brand new car for $20,000 in 2021, roughly how much will your vehicle be worth in 5 years?</p>
   <div class="responses">
-    <button onclick="answer5wrong()">$5,700</button>
-    <button onclick="answer5correct()">$10,500</button>
-    <button onclick="answer5wrong()">$12,800</button>
-    <button onclick="answer5wrong()">$17,400</button>
-    <button onclick="answer5wrong()">$20,000</button>
+    <button onclick="five()">$5,700</button>
+    <button id = "correct" onclick="five()">$10,500</button>
+    <button onclick="five()">$12,800</button>
+    <button onclick="five()">$17,400</button>
+    <button onclick="five()">$20,000</button>
   </div>
+  <p class="correctAnswer"id="correctOrWrong"></p>
   <p class="correctAnswer" id="correctAnswer"></p>
   <p class="answerText" id="answerText"></p>
   <a class="nextPageBtn" id="nextPageBtn" href="question6.html">Next Question</a>
