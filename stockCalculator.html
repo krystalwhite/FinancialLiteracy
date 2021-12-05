@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Stock Calculator</title>
+    <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
   </head>
   <body>
- <form onsubmit="test()">
+ <div>
      <label>Initial Investment: 
     <input id="inputPrincipal" type="number" placeholder="1000"></label>
     <br><br>
@@ -21,8 +21,8 @@
     <label>Rate of Return: 
     <input id="inputRate" type="number" placeholder="8"></label>
     <br><br>
-    <input type="submit">
-</form>
+    <button onclick="investmentCalculator()">Submit</button>
+    </div>
 <p id="printTotal"></p>
   </body>
 </html>
