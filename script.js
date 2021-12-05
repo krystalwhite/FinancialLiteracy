@@ -99,8 +99,9 @@ function investmentCalculator(){
     let totalInvestmentValue = 0 + Math.round ((simpleCalculatorTotalValue + additionalContributionTotalValue)*100)/100;
 
     let print = document.getElementById("printTotal"); 
-    print.innerHTML = "Congrats! You would have saved $" + totalInvestmentValue + "!"; 
+    print.innerHTML = "Congrats! You would have saved $" + totalInvestmentValue + "! \n \n" + disclaimer; 
 
+   
 
 
 }
