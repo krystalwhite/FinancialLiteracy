@@ -9,7 +9,7 @@
   </head>
   <body>
     <div>
- <form onsubmit="investmentCalculator()">
+ <form>
      <label>Initial Investment: 
     <input id="inputPrincipal" type="number" placeholder="1000"></label>
     <br><br>
@@ -22,7 +22,7 @@
     <label>Rate of Return: 
     <input id="inputRate" type="number" placeholder="8"></label>
     <br><br>
-    <input type="submit">
+    <button onclick="investmentCalculator()">Submit</button>
 </form>
 </div>
 <p id="printTotal"></p>
