@@ -12,9 +12,7 @@ let correctAnswer3 = "9 years";
 let correctAnswer4 = "$47,000"; 
 let correctAnswer5 = "$10,500"; 
 let correctAnswer6 = "$480"; 
-let correctAnswer7 = "113 months (9 years, 5 months)"; 
-
-let disclaimer = `It's commonly said that "Past performance is no guarantee of future results" and that is absolutely true. Investments with higher potential for return (like stocks, cryptocurrencies, etc.) come with higher risk; sometimes their values will go up and sometimes they will go down. Our questions assumed a guaranteed rate of return, but with real-life investments there is no guarantee. When investing your own money, choose a risk level that is comfortable for you, and only invest money that you can comfortably see decrease in the short and long-term.`;
+let correctAnswer7 = "113 months (9 years, 5 months)";
 
 function one(){ 
 document.getElementById("nextPageBtn").style.visibility = "visible"; 
@@ -25,8 +23,6 @@ function two(){
     document.getElementById("nextPageBtn").style.visibility = "visible"; 
     document.getElementById("answerText").innerHTML = "\n \n" + comment2;
     document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer2;
-    document.getElementById('button').onclick = function() {
-        alert("button was clicked");
     };
 
 
@@ -64,6 +60,7 @@ function six(){
 
 
 function seven(){ 
+    document.getElementById("nextPageBtn").style.visibility = "visible"; 
     document.getElementById("answerText").innerHTML = "\n \n" + comment7;
     document.getElementById("correctAnswer").innerHTML = "\n \n" + "Correct Answer: " + correctAnswer7;
     
@@ -99,7 +96,7 @@ function investmentCalculator(){
     let totalInvestmentValue = 0 + Math.round ((simpleCalculatorTotalValue + additionalContributionTotalValue)*100)/100;
 
     let print = document.getElementById("printTotal"); 
-    print.innerHTML = "Congrats! You would have saved $" + totalInvestmentValue + "! \n \n" + disclaimer; 
+    print.innerHTML = "Congrats! You would have saved $" + totalInvestmentValue + "!"
 
    
 
