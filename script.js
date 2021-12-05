@@ -104,7 +104,6 @@ document.getElementById("correctAnswer").innerHTML = "Correct Answer: " + correc
 
 
 
-//stock calculator 
 function investmentCalculator(){ 
     let initialPrincipal = document.getElementById("inputPrincipal").value;
     let additionalYearlyContribution = document.getElementById("inputContributions").value; 
@@ -129,76 +128,3 @@ function investmentCalculator(){
 
 }
  
-
-
-
-// function investmentCalculator () {
-
-//   let initialPrincipal = parseFloat(initialPrincipalInput.value); 
-//   let yearsInvested = parseFloat(yearsInvestedInput.value); 
-//   let additionalYearlyContribution = parseFloat(additionalYearlyContributionInput.value); 
-//   let expectedRateOfReturn = parseFloat(expectedRateOfReturnInput.value); 
-
-//   alert("test"); 
-// // alert(initialPrincipalInput.value); 
-
-  
-//     let expectedRateOfReturnAsDecimal = expectedRateOfReturn / 100;
-//     let totalYearlyRate = expectedRateOfReturnAsDecimal + 1;
-//     let yearsInvestedPlusOne = yearsInvested + 1;
-//     let totalInvestmentValue = 
-//     (initialPrincipal * ((1 + expectedRateOfReturnAsDecimal)**yearsInvested)) +     
-//     (additionalYearlyContribution *  ((totalYearlyRate**yearsInvestedPlusOne - totalYearlyRate) / expectedRateOfReturnAsDecimal)
-//         ) ;
-
-
-// document.getElementById("investedTotal").innerHTML = totalInvestmentValue; 
-
-
-    
-//     console.log(totalInvestmentValue);
-// }
-
-
-
-
-
-
-
-
-//this is WORKING CODE!! 
-
-
-// function investmentCalculator (initialPrincipal, yearsInvested, additionalYearlyContribution, expectedRateOfReturn) {
-//     let expectedRateOfReturnAsDecimal = expectedRateOfReturn / 100;
-//     let totalYearlyRate = expectedRateOfReturnAsDecimal + 1;
-//     let yearsInvestedPlusOne = yearsInvested + 1;
-//     let totalInvestmentValue = 
-//     (initialPrincipal * ((1 + expectedRateOfReturnAsDecimal)**yearsInvested)) +     
-//     (additionalYearlyContribution * 
-//         ((totalYearlyRate**yearsInvestedPlusOne - totalYearlyRate) / expectedRateOfReturnAsDecimal)
-//         ) ;
-
-
-
-
-
-
-
-
-
-
-// function invest(moneyInvested, yearsInvested){ 
-//   let investedTotalParagraph = document.getElementById("investedTotal"); 
-
-//   let moneyPerYear = moneyInvested * 12; 
-//   let totalInvestedMoney = moneyPerYear * yearsInvested; 
-//   let investedTotal = totalInvestedMoney * .08; 
-
-//   investedTotalParagraph.innerHTML = moneyInvested; 
-
-//   document.getElementById("investedTotal").style.visibility = "visible"; 
-  
-
-// }
-
