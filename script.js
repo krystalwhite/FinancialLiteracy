@@ -73,106 +73,36 @@ function seven(){
 
 
 
-//stock calculator 
-function stockCalculator(){ 
-let initialPrincipal = document.getElementById("inputPrincipal").value;
-let additionalYearlyContribution = document.getElementById("inputContributions").value; 
-let yearsInvested = document.getElementById("inputYears").value; 
-let expectedRateOfReturn = document.getElementById("inputRate").value;
  
+
+
+function investmentCalculator(){ 
+    let initialPrincipal = document.getElementById("inputPrincipal").value;
+    let additionalYearlyContribution = document.getElementById("inputContributions").value; 
+    let yearsInvestedString = document.getElementById("inputYears").value; 
+    let expectedRateOfReturn = document.getElementById("inputRate").value;
+
+ 
+    let yearsInvested = parseInt(yearsInvestedString);
     let yearsInvestedPlusOne = yearsInvested + 1;
-
     let expectedRateOfReturnAsDecimal = expectedRateOfReturn / 100;
-
     let totalYearlyRate = expectedRateOfReturnAsDecimal + 1;
     
     let simpleCalculatorTotalValue = initialPrincipal * Math.pow(totalYearlyRate, yearsInvested);   
 
-    // let additionalContributionTotalValue = 
-    // ((totalYearlyRate**yearsInvestedPlusOne - totalYearlyRate)/ expectedRateOfReturnAsDecimal) * additionalYearlyContribution;
-
     let additionalContributionTotalValue = 
     ((Math.pow(totalYearlyRate, yearsInvestedPlusOne) - totalYearlyRate)/ expectedRateOfReturnAsDecimal) * additionalYearlyContribution;
 
-    let totalInvestmentValue = additionalContributionTotalValue;
+    let totalInvestmentValue = Math.round ((simpleCalculatorTotalValue + additionalContributionTotalValue)*100)/100;
 
-let print = document.getElementById("printTotal"); 
-print.innerHTML = "Congrats! You would have saved $" + totalInvestmentValue + "!"; 
-
+    let print = document.getElementById("printTotal"); 
+    print.innerHTML = "Congrats! Over " + yearsInvested + " years, you would have saved $" + totalInvestmentValue + "!"; 
 
 
 }
+
  
 
 
 
-// function investmentCalculator () {
-
-//   let initialPrincipal = parseFloat(initialPrincipalInput.value); 
-//   let yearsInvested = parseFloat(yearsInvestedInput.value); 
-//   let additionalYearlyContribution = parseFloat(additionalYearlyContributionInput.value); 
-//   let expectedRateOfReturn = parseFloat(expectedRateOfReturnInput.value); 
-
-//   alert("test"); 
-// // alert(initialPrincipalInput.value); 
-
-  
-//     let expectedRateOfReturnAsDecimal = expectedRateOfReturn / 100;
-//     let totalYearlyRate = expectedRateOfReturnAsDecimal + 1;
-//     let yearsInvestedPlusOne = yearsInvested + 1;
-//     let totalInvestmentValue = 
-//     (initialPrincipal * ((1 + expectedRateOfReturnAsDecimal)**yearsInvested)) +     
-//     (additionalYearlyContribution *  ((totalYearlyRate**yearsInvestedPlusOne - totalYearlyRate) / expectedRateOfReturnAsDecimal)
-//         ) ;
-
-
-// document.getElementById("investedTotal").innerHTML = totalInvestmentValue; 
-
-
-    
-//     console.log(totalInvestmentValue);
-// }
-
-
-
-
-
-
-
-
-//this is WORKING CODE!! 
-
-
-// function investmentCalculator (initialPrincipal, yearsInvested, additionalYearlyContribution, expectedRateOfReturn) {
-//     let expectedRateOfReturnAsDecimal = expectedRateOfReturn / 100;
-//     let totalYearlyRate = expectedRateOfReturnAsDecimal + 1;
-//     let yearsInvestedPlusOne = yearsInvested + 1;
-//     let totalInvestmentValue = 
-//     (initialPrincipal * ((1 + expectedRateOfReturnAsDecimal)**yearsInvested)) +     
-//     (additionalYearlyContribution * 
-//         ((totalYearlyRate**yearsInvestedPlusOne - totalYearlyRate) / expectedRateOfReturnAsDecimal)
-//         ) ;
-
-
-
-
-
-
-
-
-
-
-// function invest(moneyInvested, yearsInvested){ 
-//   let investedTotalParagraph = document.getElementById("investedTotal"); 
-
-//   let moneyPerYear = moneyInvested * 12; 
-//   let totalInvestedMoney = moneyPerYear * yearsInvested; 
-//   let investedTotal = totalInvestedMoney * .08; 
-
-//   investedTotalParagraph.innerHTML = moneyInvested; 
-
-//   document.getElementById("investedTotal").style.visibility = "visible"; 
-  
-
-// }
 
