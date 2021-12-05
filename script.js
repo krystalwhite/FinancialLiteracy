@@ -77,31 +77,37 @@ function seven(){
 
 
 function investmentCalculator(){ 
+
     let initialPrincipal = document.getElementById("inputPrincipal").value;
+
     let additionalYearlyContribution = document.getElementById("inputContributions").value; 
     let yearsInvestedString = document.getElementById("inputYears").value; 
     let expectedRateOfReturn = document.getElementById("inputRate").value;
-
  
     let yearsInvested = parseInt(yearsInvestedString);
+
     let yearsInvestedPlusOne = yearsInvested + 1;
+
     let expectedRateOfReturnAsDecimal = expectedRateOfReturn / 100;
+
     let totalYearlyRate = expectedRateOfReturnAsDecimal + 1;
     
     let simpleCalculatorTotalValue = initialPrincipal * Math.pow(totalYearlyRate, yearsInvested);   
 
+
     let additionalContributionTotalValue = 
     ((Math.pow(totalYearlyRate, yearsInvestedPlusOne) - totalYearlyRate)/ expectedRateOfReturnAsDecimal) * additionalYearlyContribution;
 
-    let totalInvestmentValue = Math.round ((simpleCalculatorTotalValue + additionalContributionTotalValue)*100)/100;
+    let totalInvestmentValue = 0 + Math.round ((simpleCalculatorTotalValue + additionalContributionTotalValue)*100)/100;
 
     let print = document.getElementById("printTotal"); 
-    print.innerHTML = "Congrats! Over " + yearsInvested + " years, you would have saved $" + totalInvestmentValue + "!"; 
+    print.innerHTML = "Congrats! You would have saved $" + totalInvestmentValue + "!"; 
+
 
 
 }
-
  
+
 
 
 
