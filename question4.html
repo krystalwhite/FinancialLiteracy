@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
     
@@ -11,11 +11,12 @@
   <body class="quizBackground">
     <p class="question">If you invested $1000 in the stock market, it averaged 8% rate of growth each year and you did not withdraw any of the funds, about how much money would you have in 50 years?</p>
   <div class="responses">
-    <button onclick="answer4wrong()">$1,000</button>
-    <button onclick="answer4wrong()">$8,000</button>
-    <button onclick="answer4wrong()">$23,000</button>
-    <button onclick="answer4correct()">$47,000</button>
+    <button onclick="four()">$1,000</button>
+    <button onclick="four()">$8,000</button>
+    <button onclick="four()">$23,000</button>
+    <button id = "correct" onclick="four()">$47,000</button>
   </div>
+  <p class="correctAnswer"id="correctOrWrong"></p>
   <p class="correctAnswer" id="correctAnswer"></p>
   <p class="answerText" id="answerText"></p>
   <a class="nextPageBtn" id="nextPageBtn" href="question5.html">Next Question</a>
