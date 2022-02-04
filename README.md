@@ -9,6 +9,6 @@ The Finance 101 application endeavors to increase the financial literacy of youn
 * [Original DevPost submission](https://devpost.com/software/finance-101)
 
 # Authors and Acknowledgment
-* Krystal White researched all the finance information, wrote all the finance questions and their response texts, wrote the investment calculator logic, helped debug the JavaScript and HTML code, and recorded the video.
-* Valerie Tonsor worked on the back-end of the quiz and getting the back end to connect to the front end via HTML.
-* Rowan Polster worked on the CSS styling and some HTML elements, plus initializing the project’s GitHub repo and creating the Google Slides presentation.
+* [Krystal White](https://github.com/krystalwhite) researched all the finance information, wrote all the finance questions and their response texts, wrote the investment calculator logic, helped debug the JavaScript and HTML code, and recorded the video.
+* [Valerie Tonsor](https://github.com/valerietonsor) worked on the back-end of the quiz and getting the back end to connect to the front end via HTML.
+* [Rowan Polster](https://github.com/rowan-polster) worked on the CSS styling and some HTML elements, plus initializing the project’s GitHub repo and creating the Google Slides presentation.
